@@ -15,6 +15,7 @@ import {
     NativeModules,
     AppState,
     Platform,
+    Dimensions
 } from 'react-native'
 import PropTypes from 'prop-types'
 
@@ -25,8 +26,8 @@ export default class Barcode extends Component {
 
     static defaultProps = {
         barCodeTypes: Object.values(BarcodeManager.barCodeTypes),
-        scannerRectWidth: 255,
-        scannerRectHeight: 255,
+        scannerRectWidth: Dimensions.get('window').width,
+        scannerRectHeight: Dimensions.get('window').height,
         scannerRectTop: 0,
         scannerRectLeft: 0,
         scannerLineInterval: 3000,
