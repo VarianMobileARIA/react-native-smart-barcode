@@ -242,8 +242,10 @@ private final Context context;
     Point screenResolution = configManager.getScreenResolution();
 //    int x=this.x+screenResolution.x;
 //   int y=this.y+screenResolution.y;
-    int x=this.x;
-   int y=this.y;
+      int x=screenResolution.x;
+      int y=screenResolution.y;
+      //int x=this.x;
+      //int y=this.y;
 //    Log.i(TAG, "x: " + this.x+",y:"+this.y);
 
       if (camera == null) {
